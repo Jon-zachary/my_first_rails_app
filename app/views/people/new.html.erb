@@ -1,0 +1,7 @@
+<form action="<%= people_path %>" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+  <input type="text" placeholder="username" name="person[username]" />
+  <input type="text" placeholder="first name" name="person[first_name]" />
+  <input type="text" placeholde="last name" name="person[last_name]" />
+  <button type="submit">Create User</button>
+</form>
